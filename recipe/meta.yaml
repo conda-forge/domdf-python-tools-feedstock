@@ -1,5 +1,5 @@
 {% set name = "domdf-python-tools" %}
-{% set version = "3.5.1" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domdf_python_tools-{{ version }}.tar.gz
-  sha256: bc2d248816148e7b4049675e2da019d5c7ada8632655560fc8d3d0ba90835ab2
+  sha256: 0ac5efa2ac648dca5653e386fe73aa995e66b215c9d16b7ee87e931322a1e6c8
 
 build:
   noarch: python
