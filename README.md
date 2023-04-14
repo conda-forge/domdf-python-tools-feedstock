@@ -1,11 +1,11 @@
-About domdf-python-tools
-========================
+About domdf-python-tools-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/domdf-python-tools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/domdfcoding/domdf_python_tools
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/domdf-python-tools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Helpful functions for Python 🐍 🛠️
 
