@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domdf_python_tools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/domdf_python_tools-{{ version }}.tar.gz
   sha256: 1f8a96971178333a55e083e35610d7688cd7620ad2b99790164e1fc1a3614c18
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - importlib-metadata >=3.6.0
     - importlib-resources >=3.0.0
     - natsort >=7.0.1
-    - python >=3.6
+    - python >={{ python_min }}
     - typing-extensions >=3.7.4.1
 
 test:
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/domdfcoding/domdf_python_tools
