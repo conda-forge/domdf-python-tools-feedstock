@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - importlib-metadata >=3.6.0
     - importlib-resources >=3.0.0
