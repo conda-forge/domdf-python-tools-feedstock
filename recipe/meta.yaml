@@ -1,13 +1,13 @@
 {% set name = "domdf-python-tools" %}
-{% set version = "3.10.0" %}
+{% set version = "3.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/domdf_python_tools-{{ version }}.tar.gz
-  sha256: 2ae308d2f4f1e9145f5f4ba57f840fbfd1c2983ee26e4824347789649d3ae298
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/domdf_python_tools-{{ version }}.tar.gz
+  sha256: 518ac47b27a799a72b01377f21588e41550a59918c25a74fb55fc7d15fbb2434
 
 build:
   noarch: python
